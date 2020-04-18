@@ -1,0 +1,94 @@
+
+/* Main coming page styles
+/* ========================================== */
+#main {
+
+  /* background image for coming soon page */
+  background: url('../images/build.jpg') 50% 0 repeat-y fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+#main .btn {
+  margin-right: 12px;
+}
+
+.section-btn {
+  background: transparent;
+  border: 5px solid #ffffff;
+  color: #ffffff;
+  font-weight: bold;
+	font-size: large;
+  letter-spacing: 1px;
+  padding: 12px 40px;
+  margin-top: 44px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.section-btn:hover {
+  background: #ffffff;
+  border-color: transparent;
+  color: #63c6ae;
+}
+
+.section-btn:focus {
+  border-color: transparent;
+  outline: none;
+}
+
+/* preloader styles
+/* ========================================== */
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background: none repeat scroll 0 0 #fff;
+}
+
+/* This class and his two 'sub-classes' create the green circle simulation while page is charging*/
+.sk-spinner-pulse {
+  width: 125px;
+  height: 110px;
+  /*background-color: #63c6ae; light green */
+  background-color: Gold; /* Gold */
+  border-radius: 100%;
+  -webkit-animation: sk-pulseScaleOut 1s infinite ease-in-out;
+          animation: sk-pulseScaleOut 1s infinite ease-in-out; }
+
+		@-webkit-keyframes sk-pulseScaleOut {
+	    0% {
+	      -webkit-transform: scale(0);
+	              transform: scale(0); }
+	    100% {
+	      -webkit-transform: scale(1);
+	              transform: scale(1);
+	      opacity: 0; } }
+
+	  @keyframes sk-pulseScaleOut {
+	    0% {
+	      -webkit-transform: scale(0);
+	              transform: scale(0); }
+	    100% {
+	      -webkit-transform: scale(1);
+	              transform: scale(1);
+	      opacity: 0; } }
