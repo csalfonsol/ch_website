@@ -51,7 +51,7 @@ $(document).ready(function() {
   /* Parallax section
     -----------------------------------------------*/
   function initParallax() {
-    $('#home').parallax("100%", 0.1);
+    
     $('#service').parallax("100%", 0.3);
     $('#about').parallax("100%", 0.2);
     $('#team').parallax("100%", 0.3);
@@ -60,6 +60,8 @@ $(document).ready(function() {
     $('#faq').parallax("100%", 0.1);
     $('#testimonial').parallax("100%", 0.3);
     $('#contact').parallax("100%", 0.1);
+
+    
 
   }
   initParallax();
