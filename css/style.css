@@ -62,10 +62,7 @@ a {text-decoration: none !important;}
 
 /* All Section styles
 ------------------------------------- */
-.section-title {
-  padding-bottom: 32px;
-  position: relative;
-}
+
 
 .section-btn {
   background: transparent;
@@ -108,7 +105,7 @@ a {text-decoration: none !important;}
 /* Class for inter-section separator */
 .separator {
   position: absolute;
-  top: 517px;
+  top: 520px;
   left: 0px;
   z-index: -1 !important;
   padding: 0px;
@@ -116,35 +113,48 @@ a {text-decoration: none !important;}
 
 .separator2 {
   position: absolute;
-  top: 1760px;
+  top: 1815px;
   left: 0px;
   z-index: -1 !important;
   padding: 0px;
 }
 
-#about, #team, #portfolio, #blog, #faq, #testimonial, #contact {
+#about, #team, #portfolio, #blog, #faq, #testimonial {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-#service {
-  padding-top: 20px;
+
+
+#identity{
+  padding-top: 10px;
   padding-bottom: 60px;
 }
 
-#identity, #values {
-  padding-top: 150px;
-  padding-bottom: 80px;
+.identity-title {
+  padding-top: 170px;
 }
 
-#values {
-  padding-top: 70px;
-  padding-bottom: 80px;
+#values {  
+  padding-bottom: 200px;
 }
 
-#about, #portfolio, #faq, #contact {
-  background: #f9f9f9;
+.services-title {
+  padding-bottom: 30px;
 }
+
+.no-space {
+  height: 0px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.customers-title {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+
 
 #team, #contact {
   text-align: center;
@@ -307,18 +317,11 @@ a {text-decoration: none !important;}
 
 /* service section styles
 /* ========================================== */
-#service .media {
-  padding-top: 12px;
-  padding-bottom: 14px;
+.service {
+  width: 100%;
+  padding: 0px;
 }
 
-#service h3 {
-  padding-bottom: 10px;
-}
-
-#service a {
-  color: #63c6ae;
-}
 
 
 /* team section styles
@@ -695,41 +698,9 @@ padding-right: 1.1rem;
 
 /* contact section styles
 /* ========================================== */
-#contact .form-control {
-  background: transparent;
-  border: 2px solid #eeeeee;
-  color: #808080;
-  box-shadow: none;
-  margin-top: 18px;
-  margin-bottom: 10px;
-  transition: all 0.4s ease-in-out;
-}
 
-#contact .form-control:focus {
-  border-color: #808080;
-}
 
-#contact input {
-  height: 45px;
-}
 
-#contact textarea {
-  height: 170px;
-}
-
-#contact input[type="submit"] {
-  background: #63c6ae;
-  border-color: transparent;
-  color: #ffffff;
-  letter-spacing: 2px;
-  height: 50px;
-  margin-top: 18px;
-}
-
-#contact input[type="submit"]:hover {
-  background: #ffffff;
-  color: #63c6ae;
-}
 
 
 /* footer section styles
@@ -818,10 +789,10 @@ footer {
     margin-left: 4px;
   }
 
-  #service, #about, #team,
-  #portfolio, #contact {
+  #about, #team,
+  #portfolio {
    padding-top: 80px;
-  padding-bottom: 80px;
+   padding-bottom: 80px;
 }
 
 }

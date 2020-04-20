@@ -52,7 +52,7 @@ $(document).ready(function() {
     -----------------------------------------------*/
   function initParallax() {
     
-    $('#service').parallax("100%", 0.3);
+    $('.service').parallax("100%", 0.3);
     $('#about').parallax("100%", 0.2);
     $('#team').parallax("100%", 0.3);
     $('#portfolio').parallax("100%", 0.1);
