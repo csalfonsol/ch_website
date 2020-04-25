@@ -105,7 +105,8 @@ a {text-decoration: none !important;}
 /* Class for inter-section separator */
 .separator {
   position: absolute;
-  top: 520px;
+  top: 470px; 
+  
   left: 0px;
   z-index: -1 !important;
   padding: 0px;
