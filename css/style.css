@@ -63,7 +63,6 @@ a {text-decoration: none !important;}
 /* All Section styles
 ------------------------------------- */
 
-
 .section-btn {
   background: transparent;
   border-right: 2px solid #ffffff;
@@ -76,10 +75,11 @@ a {text-decoration: none !important;}
   font-size: large;
   letter-spacing: 2px;
   padding: 6px;
-  margin-top: 380px;  
+  margin-top: 270px;    
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
+
 .section-btn:hover {
   background: #ffffff;
   border-color: transparent;
@@ -103,14 +103,7 @@ a {text-decoration: none !important;}
 
 
 /* Class for inter-section separator */
-.separator {
-  position: absolute;
-  top: 470px; 
-  
-  left: 0px;
-  z-index: -1 !important;
-  padding: 0px;
-}
+
 
 .separator2 {
   position: absolute;
@@ -120,12 +113,39 @@ a {text-decoration: none !important;}
   padding: 0px;
 }
 
+
+
+/* home section styles
+/* ========================================== */
+#home {
+
+  /* This instruction has not effect, because the background image is setting by other code swapping one or more images. */
+  background: url('../images/home_nuevo.jpg') 50% 0 repeat-y ; 
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+  height: 400px;
+  z-index: -1 !important;
+}
+
+#home .btn {
+  margin-right: 60px;  
+}
+
 #about, #team, #portfolio, #blog, #faq, #testimonial {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
-
 
 #identity{
   padding-top: 10px;
@@ -133,12 +153,9 @@ a {text-decoration: none !important;}
 }
 
 .identity-title {
-  padding-top: 170px;
+  padding-top: 90px;
 }
 
-#values {  
-  padding-bottom: 200px;
-}
 
 .services-title {
   padding-bottom: 30px;
@@ -287,33 +304,6 @@ a {text-decoration: none !important;}
   background-color: transparent;
 }
 
-
-/* home section styles
-/* ========================================== */
-#home {
-
-  /* This instruction has not effect, because the background image is setting by other code swapping one or more images. */
-  background: url('../images/home.jpg') 50% 0 repeat-y ; 
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-position: center center;
-  color: #ffffff;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100vh;
-  text-align: left;
-  z-index: -99 !important;
-}
-
-#home .btn {
-  margin-right: 60px;  
-}
 
 
 /* service section styles
@@ -706,11 +696,9 @@ padding-right: 1.1rem;
 
 /* footer section styles
 /* ========================================== */
-footer {
-  padding-top: 62px;
-  padding-bottom: 62px;
-  text-align: center;
-  position: relative;
+
+.no-padding {
+  padding: 0px;
 }
 
 .blog-footer {background: #f9f9f9;}
