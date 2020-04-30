@@ -10,7 +10,12 @@
 -----------------------------------------------*/
 $(window).load(function(){
 
-    $('.preloader').fadeOut(5500); // set duration in brackets
+     /* wow -------------------------------
+    Provide effects such fadeIn fadeOut .. etc*/
+    new WOW({ mobile: false }).init();
+
+    // When pages load, preloader gif should disappear, and web content appear
+    $('.preloader').fadeOut(1500); // set duration in brackets
 });
 
 /*
@@ -37,7 +42,7 @@ $(document).ready(function() {
   }) */
 
   /* Owl Carousel
-    -----------------------------------------------*/
+    -----------------------------------------------
   $(document).ready(function() {
     $("#owl-testimonial").owlCarousel({
       autoPlay: 5000,
@@ -46,6 +51,7 @@ $(document).ready(function() {
       itemsDesktopSmall : [979,2],
     });
   });
+  */
 
 
   /* Parallax section
@@ -73,9 +79,5 @@ $(document).ready(function() {
         effect: 'fadeScale',
     });
 
-
-  /* wow
-  -------------------------------*/
-  new WOW({ mobile: false }).init();
 
   });
