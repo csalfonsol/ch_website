@@ -293,7 +293,7 @@ a {text-decoration: none !important;}
 #home {
 
   /* This instruction has not effect, because the background image is setting by other code swapping one or more images. */
-  background: url('../images/home.png') 50% 0 repeat-y ; 
+  background: url('../images/home.jpg') 50% 0 repeat-y ; 
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center center;
