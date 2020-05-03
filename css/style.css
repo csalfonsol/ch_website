@@ -18,7 +18,7 @@ html,body {
 
 /* Typography
 ------------------------------------- */
-h1,h2,h3,h4,h5,span {
+h1,h3,h4,h5,span {
   font-weight: bold;
 }
 
@@ -26,7 +26,8 @@ h1 {padding-bottom: 10px;}
 
 h2 {
   font-size: 38px;
-  line-height: 52px;
+  margin-top: 30px;
+  letter-spacing: 3px;  
 }
 
 h3 {
@@ -37,9 +38,8 @@ h3 {
 
 h4 {
   font-size: 18px;
-  line-height: 28px;
-  letter-spacing: 0.6px;
-  padding-top: 10px;
+  letter-spacing: 1px;
+  padding-top: 20px;
 }
 
 h5 {
@@ -121,7 +121,7 @@ a {text-decoration: none !important;}
 #home2 {
 
   /* This instruction has not effect, because the background image is setting by other code swapping one or more images.*/
-  background: url('../images/contact.jpg'); 
+  background: url('../images/contact_footer.jpg'); 
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center center;
@@ -130,11 +130,7 @@ a {text-decoration: none !important;}
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100vh;
+  height: 120vh;
   text-align: center;
 }
 
