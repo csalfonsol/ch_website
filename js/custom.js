@@ -65,10 +65,6 @@ $(document).ready(function() {
     $('#blog').parallax("100%", 0.2);
     $('#faq').parallax("100%", 0.1);
     $('#testimonial').parallax("100%", 0.3);
-    $('#contact').parallax("100%", 0.1);
-
-    
-
   }
   initParallax();
 
