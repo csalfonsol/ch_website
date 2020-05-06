@@ -1,15 +1,35 @@
-<?php 
+<?php
+// Email Setting
+//=======================================
+// $admin_email = "contabilidad@auditoresyconsultoresch.com";} -> Email for testing
 
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $message = $_POST['message'];
+$admin_email = "claudia.hurtado@auditoresyconsultoresch.com";
+$from_name   = "Auditores y consultores CH";
 
-    $formcontent = "From: $name \n Message: $message";
-    $recipient = "csalfonsol@unal.edu.co";
-    $subject = "Contact Form By CH-WEBSITE";
-    $mailheader = "From: $email \r\n";
-    
-    mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
-    echo "Thank You!";
+
+$user_name 	= strip_tags($_POST['name']);
+$user_email 	= strip_tags($_POST['email']);
+$comment_text 	= strip_tags($_POST['message']);
+
+
+if (!filter_var($user_email, FILTER_VALIDATE_EMAIL)) {
+	echo '5';
+	exit;
+}
+else {
+	$to  	   		= "$admin_email"; 
+	$subject 		= "! Nueva solicitud de información ¡";
+	$message		= "Un usuario ha ingresado a auditoresyconsultoresch.com, y quiere contactar con la empresa: <br/><br/>"; 
+	$message 		.= "Nombre: $user_name <br/>";
+	$message 		.= "Email: $user_email <br/>";
+	$message 		.= "Mensaje: $comment_text <br/>";
+	$headers  		 = "MIME-Version: 1.0\r\n";
+	$headers 		.= "Content-type: text/html; \r\n";
+	$headers 		.= "From: $from_name";	
+	$send 			= mail($to, $subject, $message, $headers);
+	echo '1';		
+	exit;
+}
+
 
 ?>

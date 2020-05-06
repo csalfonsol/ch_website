@@ -60,8 +60,6 @@
 
 <!-- Navigation section
 ================================================== -->
-<!-- Navigation section
-================================================== -->
 <div id="navigation" class="top-position">
 	<div class="navbar navbar-default" role="navigation">
 		<div class="container">
@@ -73,8 +71,7 @@
 					<li><a href="services.html" class="">SERVICIOS</a></li>	
 					<li><a href="customers.html">CLIENTES</a></li>		
 					<li><a href="#" class="">INDICADORES</a></li>
-					<li><a href="#contact" class="">CONTÁCTENOS</a></li>
-					<!--<li><a href="contact.html" class="">INDICADORES</a></li>	-->		
+					<li><a href="#contact" class="">CONTÁCTANOS</a></li>				
 				</ul>
 			</div>
 		</div>
@@ -82,51 +79,36 @@
 </div>
 
 
-<!-- indicadores fondo 
-<div class="col-md-12 service">
-	<img src="images/indicadores.jpg" class="img-responsive">
-</div>	
--->
-
-
 <!-- Contact seccion
-================================================== -->
-
-<!-- indicadores fondo 
-<div id="contact" class="col-md-12 service">
-	<img src="images/contactenos.jpg" class="img-responsive">
-</div>	
--->
-
-<!-- Contact section
-+++ Oculta temporalmente +++
 ================================================== -->
 <section id="contact">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12 col-sm-12">
-				<form action="mail.php" method="POST">
-					<h2 class="wow bounceIn">CONTÁCTENOS</h2>
+			<div class="col-md-12 col-sm-12">			
+				<form id="contact_form" action="mail.php" method="post">								
+					<h2 class="wow bounceIn">CONTÁCTANOS</h2>
 					<h4 class="font-weight-normal wow fadeInUp" data-wow-delay="0.2s">Contamos con un equipo de contadores a tu servicio, por favor escríbenos tus preguntas e inquietudes.</h4>
-					<input placeholder="  Nombre" type="text" class="wow fadeIn" data-wow-delay="0.3s" name="name">	
-					<input placeholder="  E-mail" type="text" class="wow fadeIn" data-wow-delay="0.5s" name="email">					
-					<textarea placeholder="  Mensaje" class="wow fadeIn" data-wow-delay="0.7s" name="message" rows="5" cols="25"></textarea><br />
-					<input class="btn btn-default contact-submit smoothScroll wow fadeInUp" data-wow-delay="0.6s" type="submit" value="ENVIAR">	
-				</form>
+					<input id="name" placeholder="  Nombre" type="text" class="wow fadeIn" data-wow-delay="0.3s" name="name">	
+					<input id="email" placeholder="  E-mail" type="text" class="wow fadeIn" data-wow-delay="0.5s" name="email">					
+					<textarea id="message" placeholder="  Mensaje" class="wow fadeIn" data-wow-delay="0.7s" name="message" rows="5" cols="25"></textarea><br />
+					<input class="btn btn-default contact-submit smoothScroll wow fadeInUp" data-wow-delay="0.6s" type = "submit" value = "ENVIAR">		
+					
+					<!-- Info Modal -->
+					<div id="show_contact_msg" class = "modal_view">
+						<div class="modal-content">						  
+						  <p id = "modal-message">
+							  <span class="modal-submitting">Enviando . . . </span>
+						  </p>
+						  <a onclick = "hideModal()" class="modal-close btn btn-primary">Cerrar</a>	  
+						</div>  
+					</div>
+				</form>				
 			</div>
 		</div>
 	</div>
 </section>
 
 
-<!-- Pie de pagina (Footer)
-==================================================  
-<footer>
-	<div class="col-md-12 no-padding">
-		<img src="images/pie_texto.png" class="img-responsive">
-	</div>	
-</footer>
--->
 
 <!-- Javascript
 ================================================== -->
@@ -138,6 +120,61 @@
 <script src="js/nivo-lightbox.min.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/custom.js"></script>
+
+<script>
+	/*
+	==============================================
+	Ajax Submiting For Email Contact Form.
+	===================================================================== 	
+	*/
+
+	$("#contact_form").submit(function(e) {
+		$('#show_contact_msg').css("opacity", "1");
+		$('#show_contact_msg').css("pointer-events", "auto");
+
+		var name = $('#name').val();
+		var email = $('#email').val();
+		var message = $('#message').val();
+		
+		var formURL = $(this).attr("action");
+		var data = {
+			name : name,
+			email : email,
+			message : message,
+		}
+
+		$.ajax({
+			url : formURL,
+			type: "POST",
+			data : data,
+			
+			success: function (res) {				
+				if(res == '1'){				
+					$('#modal-message').html("<span class = modal-successful>¡Correo enviado!</span> <br> <div class = modal-text><span>Gracias, nos pondremos en contacto contigo lo más pronto posible.</span></div>");					
+				}
+
+				if(res == '5'){			
+					$('#modal-message').html("<span class = modal-err>¡Error!</span> <br> <div class = modal-text><span>Por favor, ingresa una dirección de correo electrónico válida. <br> Si el problema persiste, contacta con el administrador.</span></div>");					
+				}
+			}
+		});
+		e.preventDefault();
+	});
+
+
+</script>
+
+
+<script>
+
+	function hideModal() {
+		
+		$('#modal-message').html("<span class=modal-submitting>Enviando . . . </span>");
+		$('#show_contact_msg').css("opacity", "0");
+		$('#show_contact_msg').css("pointer-events", "none");
+	}
+
+</script>
 
 
 </body>

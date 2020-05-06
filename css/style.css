@@ -18,7 +18,7 @@ html,body {
 
 /* Typography
 ------------------------------------- */
-h1,h3,h4,h5,span {
+h1,h3,h4,h5 {
   font-weight: bold;
 }
 
@@ -718,9 +718,10 @@ padding-right: 1.1rem;
   height: 120vh;
   text-align: center;
   margin-top: 10px;
+  z-index: -1;
 }
 
-#contact form {
+#contact_form {
   
 }
 
@@ -766,13 +767,89 @@ textarea {
 
 .contact-submit:hover {
   background:rgba(255, 255, 255, 0.9);
-  
-  
   color: #0e80b4;
 }
 
+/* Succesfull Submit or error contact form 
+.gen { 
+	background: none repeat scroll 0 0 #fff;
+	color: #008900;
+	font-size: 20px;
+	margin: 15px auto;
+	padding: 5px;
+	text-align: center;
+}
+
+.err {
+	background: none repeat scroll 0 0 #FF0000;
+	color: #008900;
+	font-size: 20px;
+	margin: 15px auto;
+	padding: 5px;
+	text-align: center;
+}
+*/
+
+.modal-close {
+  margin-top: 20px;
+  width: 50%;
+  font-weight: bold;
+}
+
+.modal-content {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 500px;
+  padding: 10px 20px;
+  margin: 20% auto;
+  position: relative;  
+}
+
+.modal_view {
+  background-color: rgba(0,0,0,.7);
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  opacity:0;
+  pointer-events:none;
+  z-index: 1;
+}
+
+.modal-submitting {
+  color: rgba(0, 0, 0, 0.596);
+  font-size: large;
+  text-align: center;
+}
+
+.modal-text {
+  color: rgb(0, 0, 0);
+  font-size: medium;
+  text-align: left;
+}
+
+.modal-successful {
+  color: rgb(7, 148, 61);
+  font-weight: bold;
+  font-size: large;
+  text-align: center;
+}
+
+.modal-err {
+  color: rgb(163, 36, 27);
+  font-weight: bold;
+  font-size: large;
+  text-align: center;
+}
 
 
+/*
+#miModal:target{
+  opacity: 1;
+  pointer-events: auto;
+}*/
+
+/* Make changes on all placeholder's */
 ::placeholder {
    font-size: large;
    color: white; 
