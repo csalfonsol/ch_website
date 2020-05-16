@@ -492,6 +492,7 @@ padding-right: 1.1rem;
 .indicadores-container {
   margin-top: 10px;
   padding: 20px;
+  
 }
 
 /* Bank and dian section styles
@@ -499,6 +500,10 @@ padding-right: 1.1rem;
 #dian {  
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.dian-image {
+  text-align: center;
 }
 
 
