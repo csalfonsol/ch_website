@@ -76,7 +76,7 @@ a {text-decoration: none !important;}
   font-size: large;
   letter-spacing: 2px;
   padding: 6px;
-  margin-top: 270px;    
+  margin-top: 320px;   
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
@@ -120,8 +120,8 @@ a {text-decoration: none !important;}
 /* ========================================== */
 
 
-#home .btn {
-  margin-right: 12px;
+#home .btn {  
+  margin-right: 60px;  
 }
 
 
@@ -143,14 +143,13 @@ a {text-decoration: none !important;}
       -ms-flex-align: center;
           align-items: center;
   text-align: left;
-  height: 400px;
+  height: 440px;
   z-index: -1 !important;
   margin-top: 10px;
+  
 }
 
-#home .btn {
-  margin-right: 60px;  
-}
+
 
 #about, #team, #portfolio, #blog, #faq, #testimonial {
   padding-top: 60px;
