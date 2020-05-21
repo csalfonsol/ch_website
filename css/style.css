@@ -120,12 +120,6 @@ a {text-decoration: none !important;}
 /* ========================================== */
 
 
-#home .btn {  
-  margin-right: 60px;  
-}
-
-
-
 #home {
 
   /* This instruction has not effect, because the background image is setting by other code swapping one or more images. */
@@ -143,11 +137,16 @@ a {text-decoration: none !important;}
       -ms-flex-align: center;
           align-items: center;
   text-align: left;
-  height: 440px;
+  height: 410px;
   z-index: -1 !important;
   margin-top: 10px;
-  
 }
+
+
+#home .btn {  
+  margin-right: 60px;  
+}
+
 
 
 
@@ -501,7 +500,7 @@ padding-right: 1.1rem;
   padding-bottom: 10px;
 }
 
-.dian-image {
+.align-image {
   text-align: center;
 }
 
