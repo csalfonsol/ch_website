@@ -335,10 +335,12 @@ background-color: transparent;
     padding-top: 0;
 }
 
-
 img {
-  height: auto;
+    line-height: 100%;
+    height: 100%;  
+    
 }
+
 
 
 /* service section styles
