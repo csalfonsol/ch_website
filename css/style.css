@@ -103,7 +103,6 @@ padding-right: 20px;
 }
 
 
-
 /* Class for inter-section separator */
 
 
@@ -120,15 +119,11 @@ padding: 0px;
 /* home section styles
 /* ========================================== */
 
-.logo{
-  /*height: 100%;*/
-  height: auto;
-  
+
+#home .btn {  
+margin-right: 60px;  
 }
 
-.d-inline-block {
-  display:inline-block !important
-}
 
 
 #home {
@@ -151,12 +146,9 @@ text-align: left;
 height: 410px;
 z-index: -1 !important;
 margin-top: 10px;
+
 }
 
-
-#home .btn {  
-margin-right: 60px;  
-}
 
 
 #about, #team, #portfolio, #blog, #faq, #testimonial {
@@ -257,6 +249,8 @@ border-radius: 100%;
 /* navigation styles
 ========================================== 
 
+
+
 .navbar-default {
 position: static !important;
 background: hsl(0, 0%, 100%);
@@ -335,13 +329,11 @@ background-color: transparent;
     padding-top: 0;
 }
 
-img {
-    line-height: 100%;
-    height: 100%;  
-    
+.logo{
+  /*height: 100%;*/
+  height: 100%;
+  
 }
-
-
 
 /* service section styles
 /* ========================================== */
@@ -523,13 +515,8 @@ padding-top: 10px;
 padding-bottom: 10px;
 }
 
-.align-image {
-width: 100%;
-margin-left: auto;
-margin-right: auto;
+.dian-image {
 text-align: center;
-
-
 }
 
 
@@ -550,6 +537,9 @@ text-align: center;
 z-index: -1;
 }
 
+#contact_form {
+
+}
 
 input {
 border-style: solid;
@@ -687,19 +677,12 @@ pointer-events: auto;
 /* ========================================== */
 
 .no-padding {
-  padding: 0px;
+padding: 0px;
 }
 
 .slim-padding {
   padding-bottom: 10px;
   padding-top: 14px;
-}
-
-.no-padding-margin-y {
-padding-top: 0 !important;
-padding-bottom: 0 !important;
-margin-top: 0 !important;
-margin-bottom: 0 !important;
 }
 
 .blog-footer {background: #f9f9f9;}
@@ -738,23 +721,16 @@ transform: rotate(360deg);
 
 
 /* Responsive Mobile styles
-========================================== */
+/* ========================================== */
+@media only screen and (max-width: 980px) {
+#home { height: 58vh;}
 
-/* Esto significa, que si el ancho de la ventana es 800 O MENOS se aplica la propiedad especificada 
-@media screen and (max-width: 800px){
- body {
-   background-color: salmon;  
- }
+#about .embed-responsive {margin-top: 62px;}
+
+#team .col-md-4:last-child {margin-top: 62px;}
+
 }
-*/
-
-@media screen and (max-width: 768px){
-/* Class for section titles */
-.title {
-  display: none;
-} 
-
-
+@media (max-width: 768px) {
 #home {
   height: 56vh;
 }
@@ -763,47 +739,15 @@ transform: rotate(360deg);
   font-size: 34px;
 }
 
-/*
-.navbar-default {
-  text-align: center;
-}
-
+.navbar-default {text-align: center;}
 .navbar-default .navbar-brand {
   line-height: 15px;
 }
-*/
+
+#team .col-md-4 {margin-bottom: 62px;}
+
+#team .col-md-4:last-child {margin-top: 0px;}
 }
-
-
-@media screen and (max-width: 992px){
-/* Class for profesional and values section */
-.valores {
-  display: none;
-}
-}
-
-@media screen and (min-width: 992px){
-/* Class for profesional and values section */
-.valores-divided{
-  display: none;
-}
-}
-
-
-
-
-
-/*@media only screen and (max-width: 980px) {
-#home { height: 58vh;}
-
-#about .embed-responsive {margin-top: 62px;}
-
-#team .col-md-4:last-child {margin-top: 62px;}
-
-}
-*/
-
-/*
 
 @media (max-width: 760px) {
 #home {
@@ -842,4 +786,3 @@ footer .social-icon li a {
   margin-top: 20px;
 }
 }
-*/
