@@ -29,7 +29,6 @@
    ================================================== -->
 	<link rel="stylesheet" href="css/nivo-lightbox.css">	
 
-
 	<!-- Main CSS
    ================================================== -->
 	<link rel="stylesheet" href="css/style.css">
@@ -64,13 +63,14 @@
 		<div class="container">
 			<div class="collapse navbar-collapse">
 				<ul class="nav navbar-nav">
-					<li><a title="ch s.a.s" href="index.html"><img src="images/logo.png" width="337" height="135" alt="ch s.a.s" /></a></li>
-					<li><a href="index.html" >INICIO</a></li>
-					<li><a href="index.html#nosotros" class="">NOSOTROS</a></li>	
-					<li><a href="services.html" class="">SERVICIOS</a></li>					
-					<li><a href="#customers">CLIENTES</a></li>					
-					<li><a href="contact.html" class="">INDICADORES</a></li>	
-					<li><a href="contact.html#contact" class="">CONTÁCTANOS</a></li>		
+					<li><a title="ch s.a.s" href="#navigation"><img src="images/logo.png" width="337" height="135" alt="ch s.a.s" /></a></li>
+					<li><a href="#navigation" >INICIO</a></li>
+					<li><a href="#nosotros" class="">NOSOTROS</a></li>					
+					<li><a href="services.html" class="">SERVICIOS</a></li>	
+					<li><a href="customers.html#navigation">CLIENTES</a></li>		
+					<li><a href="contact.html" class="">INDICADORES</a></li>
+					<li><a href="contact.html#contact" class="">CONTÁCTANOS</a></li>
+					<!--<li><a href="contact.html" class="">INDICADORES</a></li>	-->		
 				</ul>
 			</div>
 		</div>
@@ -78,11 +78,75 @@
 </div>
 
 
-<!-- Customers seccion
+
+
+
+<!-- Home section
 ================================================== -->
+<section id="home">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-sm-12 ">			  	
+				<a href="services.html" class="btn btn-default section-btn wow fadeInUp" data-wow-delay="0.4s">SERVICIOS</a>
+				<a href="contact.html#contact" class="btn btn-default section-btn wow fadeInUp" data-wow-delay="0.9s">CONTÁCTENOS</a>							  	
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!-- Identity (Mision, Vision y valores) seccion
+================================================== -->
+<div id="nosotros"></div>
+
+<!-- Section title -->
+<div class="row">
+	<div class="col-md-offset-1 col-md-8 col-sm-offset-1 col-sm-10 wow bounceIn">
+		<div class="identity-title">
+			<h1>Nosotros</h1>				
+		</div>
+	</div>
+</div>
+
+<section id="identity" >
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 wow fadeInUp" data-wow-delay="0.4s">
+				<img src="images/vi_mi_ob.webp" class="img-responsive" alt="Identidad">
+			</div>		
+		</div>
+	</div>
+</section>
+
+
+<!-- Values (Valores y equipo profesional) seccion
+================================================== -->
+<div id="equipo" class="no-space"></div>
+
+<!-- Section title -->
+<div class="row">
+	<div class="col-md-offset-1 col-md-8 col-sm-offset-1 col-sm-10 wow bounceIn">				
+		<h1>Valores</h1>						
+	</div>
+</div>
+
+<section id="values" class="parallax-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 wow fadeInUp" data-wow-delay="0.4s">
+				<img src="images/values.jpg" class="img-responsive" alt="Valores y equipo profesional">
+			</div>		
+		</div>
+	</div>
+</section>
+
+
+
+<!-- Customers seccion
+================================================== 
 <div id="customers"></div>
 
-	<!-- Section title -->
+
 	<div class="row ">
 		<div class="col-md-offset-1 col-md-8 col-sm-offset-1 col-sm-10 wow bounceIn">						
 			<div class="customers-title ">
@@ -90,51 +154,20 @@
 			</div>									
 		</div>
 	</div>
+-->
 
-	<!-- Customers gallery -->
-	<div class="container">
-		<div class="row">
-			<div class="col-md-4 customer">				
-				<a href="http://abconstrucciones.co/" target="_blank" alt="abconstrucciones">
-					<img src="images/ab.jpg" class="img-responsive">
-				</a>
-			</div>
-			<div class="col-md-4 customer">
-				<a href="http://www.cmt.net.co/about.html" target="_blank" alt="cmt">
-					<img src="images/cmtc.jpg" class="img-responsive ">
-				</a>
-			</div>
-			<div class="col-md-4 customer">
-				<a href="https://www.colombia.com/" target="_blank" alt="colombia.com">
-					<img src="images/colombia.jpg" class="img-responsive">
-				</a>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-4 customer">
-				<a href="http://www.delightcane.com/" target="_blank" alt="delightcane">
-					<img src="images/cane.jpg" class="img-responsive">
-				</a>
-			</div>
-			<div class="col-md-4 customer">
-				<a href="http://www.formandofuturo.org/" target="_blank" alt="fundacion futuro">
-					<img src="images/fundacion.jpg" class="img-responsive">
-				</a>
-			</div>
-			<div class="col-md-4 customer">
-				<a href="http://amtlogistica.net/" target="_blank" alt="amt logistica">
-					<img src="images/amt.jpg" class="img-responsive">
-				</a>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-4 customer">
-				<a href="http://grafitalento.com/" target="_blank" alt="Grafitalento S.A.S">
-					<img src="images/grafi.jpg" class="img-responsive ">
-				</a>
-			</div>			
-		</div>
-	</div>
+<!-- indicadores fondo 
+<div class="col-md-12 service">
+	<img src="images/indicadores.jpg" class="img-responsive">
+</div>	
+-->
+
+	
+<!-- indicadores fondo 
+<div id="contact" class="col-md-12 service">
+	<img src="images/contactenos.jpg" class="img-responsive">
+</div>	
+-->
 
 <!-- Pie de pagina (Footer)
 ==================================================  -->
@@ -144,15 +177,19 @@
 	</div>	
 </footer>
 
+
+
 <!-- Javascript
 ================================================== -->
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.sticky.js"></script>
 <script src="js/jquery.backstretch.min.js"></script>
+<script src="js/jquery.parallax.js"></script>
 <script src="js/nivo-lightbox.min.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/custom.js"></script>
+
 
 
 </body>

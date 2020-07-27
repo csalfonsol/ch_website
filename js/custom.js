@@ -5,12 +5,13 @@
 
 */
 
-/* jQuery Pre loader
+/* jQuery Pre loader 
 --> window.load fires later (or at the same time in the worst/failing cases) when images and such are loaded, so if you're using image dimensions for example, you often want to use this instead
------------------------------------------------*/
-$(window).load(function(){
+----------------------------------------------- */
 
-     /* wow -------------------------------
+$(window).on('load', function(){
+
+    /* wow -------------------------------
     Provide effects such fadeIn fadeOut .. etc*/
     new WOW({ mobile: false }).init();
 
@@ -28,6 +29,7 @@ $(document).ready(function() {
     $('.navbar-collapse a').click(function(){
         $(".navbar-collapse").collapse('hide');
     });
+     
 
 
   /* home slider section
@@ -55,7 +57,7 @@ $(document).ready(function() {
 
 
   /* Parallax section
-    -----------------------------------------------*/
+    -----------------------------------------------
   function initParallax() {
     
     $('.service').parallax("100%", 0.3);
@@ -67,13 +69,16 @@ $(document).ready(function() {
     $('#testimonial').parallax("100%", 0.3);
   }
   initParallax();
-
+*/
 
   /* Nivo lightbox
-    -----------------------------------------------*/
+    -----------------------------------------------
   $('#portfolio .col-md-4 a').nivoLightbox({
         effect: 'fadeScale',
     });
+*/
+
+
 
 
   });
