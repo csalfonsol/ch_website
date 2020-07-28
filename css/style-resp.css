@@ -1,9 +1,100 @@
 
+ /* General
+  ========================================== */
+
 .no-space {
   height: 0px;
   padding: 0px;
   margin: 0px;
   }
+
+
+/* Navbar styles
+  ========================================== */
+
+  nav {
+    box-shadow: 0px 10px 10px 0px rgba(50, 50, 50, 0.44);  
+  }
+  
+  .navbar-nav a {
+    color: #275570 !important;
+    font-size: 17px;
+    font-weight: bold;
+    transition: all 0.6s ease-in-out;
+    letter-spacing: 2px;
+    
+  }
+
+  .navbar-nav a:hover {
+    color: #63c6ae !important;
+  }
+
+
+  
+
+
+ /* Home styles
+  ========================================== */
+
+
+.button-container {
+  display: inline-block;
+  position: relative;
+}
+
+.button-container a{
+  border-right: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  border-left: none;
+  border-top: none;
+  border-radius: 0px;
+  background: transparent;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: medium;
+  letter-spacing: 2px;
+  padding: 6px;
+  text-decoration: none;
+  -webkit-transition: all 0.4s ease-in-out;  
+  transition: all 0.4s ease-in-out;
+}
+  
+.button-container .btn-services {
+  position: absolute;
+  bottom: 2em;
+  left: 3em;  
+}
+
+.button-container .btn-contact {
+  position: absolute;
+  bottom: 2em;
+  left: 15em;
+  
+}
+
+.btn-contact:hover {
+  background: #ffffff;
+  border-color: transparent;
+  color: #63c6ae;
+}
+  
+.btn-contact:focus {
+  border-color: transparent;
+  outline: none;
+}
+
+.btn-services:hover {
+  background: #ffffff;
+  border-color: transparent;
+  color: #63c6ae;
+}
+  
+.btn-services:focus {
+  border-color: transparent;
+  outline: none;
+}
+  
+
 
 
 
@@ -21,73 +112,99 @@
   /*  MOVILES  */
   @media screen and (max-width: 768px){
 
-    .after-nav-margin {
-      margin-top: 100px;
+      .after-nav-margin {
+        margin-top: 100px;
+      }
+
+      .valores {
+        display: none;
+      }
+      
+      .logo {
+        width: 150px;
+      }
+     
+      
     }
 
-    .valores {
+  
+
+  /* ESCRITORIO - Medium, Large  */
+  @media screen and (min-width: 769px){
+    /* Class for profesional and values section */
+    
+
+    .after-nav-margin {
+      margin-top: 150px;
+    }
+
+    .valores-divided{
       display: none;
     }
 
     .logo {
-      width: 150px;
+      width: 250px;
     }
+  }
 
 
-    /* Class for section titles 
-    .title {
+  /* ESCRITORIO - Large */
+  @media screen and (min-width: 993px){                
+
+    .home-mov {
       display: none;
-    } 
-    
-    
-    #home {
-      height: 56vh;
     }
-    
-    #home h2 {
-      font-size: 34px;
-    }
-    */
-    /*
-    .navbar-default {
-      text-align: center;
-    }
-    
-    .navbar-default .navbar-brand {
-      line-height: 15px;
-    }
-    */
+        
+  }
+
+  /*  MOVILES - Medium */
+  @media screen and (max-width: 992px){
+
+    .home-desk {
+      display: none;
     }
 
-    /* MOVILES  */
-    @media screen and (min-width: 768px){
-      /* Class for profesional and values section */
-      
-
-      .after-nav-margin {
-        margin-top: 150px;
-      }
-
-      .valores-divided{
-        display: none;
-      }
-
-      .logo {
-        width: 250px;
-      }
+    .navbar-nav a {      
+      font-size: 14px;          
     }
+   
     
+  }
+
+  /*  ESCRITORIO - Extra large */
+  @media screen and (min-width: 1171px){
+
+
+    .navbar-nav a {      
+      font-size: 17px;          
+    }
+   
     
-    /*
-    @media screen and (max-width: 992px){
-       Class for profesional and values section 
-     
-    }*/
+  }
+
+
+  /*   MOVILES - Medium - large  */
+  @media screen and (max-width: 1170px){
+
+
+    .navbar-nav a {      
+      font-size: 14px;          
+    }
+   
     
-    /*@media screen and (min-width: 992px){
-       Class for profesional and values section 
-      
-    }*/
+  }
+  
+  
+  /*
+  @media screen and (max-width: 992px){
+      Class for profesional and values section 
+    
+  }*/
+  
+  /*@media screen and (min-width: 992px){
+      Class for profesional and values section 
+    
+  }*/
     
 
 
