@@ -8,6 +8,10 @@
   margin: 0px;
   }
 
+  html {
+     scroll-behavior: smooth;  
+  }
+
 
 /* Navbar styles
   ========================================== */
@@ -98,6 +102,16 @@
 
 
 
+
+ /* Services styles
+  ========================================== */
+
+  .service-img {
+    height: 400px;
+  }
+
+
+
  /* Responsive Mobile styles
   ========================================== */
   
@@ -112,20 +126,24 @@
   /*  MOVILES  */
   @media screen and (max-width: 768px){
 
-      .after-nav-margin {
-        margin-top: 100px;
-      }
+    .after-nav-margin {
+      margin-top: 100px;
+    }
 
-      .valores {
-        display: none;
-      }
-      
-      .logo {
-        width: 150px;
-      }
+    .valores {
+      display: none;
+    }
+
+    .pie-desk{
+      display: none;
+    }
+    
+    .logo {
+      width: 150px;
+    }
      
       
-    }
+  }
 
   
 
@@ -139,6 +157,10 @@
     }
 
     .valores-divided{
+      display: none;
+    }
+
+    .pie-mov{
       display: none;
     }
 
