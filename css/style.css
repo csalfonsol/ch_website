@@ -1,0 +1,275 @@
+
+ /* General
+  ========================================== */
+
+  .no-space {
+    height: 0px;
+    padding: 0px;
+    margin: 0px;
+    }
+  
+    html {
+       scroll-behavior: smooth;  
+    }
+  
+  
+  /* Navbar styles
+    ========================================== */
+  
+    nav {
+      box-shadow: 0px 10px 10px 0px rgba(50, 50, 50, 0.44);  
+    }
+    
+    .navbar-nav a {
+      color: #275570 !important;
+      font-size: 17px;
+      font-weight: bold;
+      transition: all 0.6s ease-in-out;
+      letter-spacing: 2px;
+      
+    }
+  
+    .navbar-nav a:hover {
+      color: #63c6ae !important;
+    }
+  
+  
+    
+  
+  
+   /* Home styles
+    ========================================== */
+  
+  
+  .button-container {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .button-container a{
+    border-right: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    border-left: none;
+    border-top: none;
+    border-radius: 0px;
+    background: transparent;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: medium;
+    letter-spacing: 2px;
+    padding: 6px;
+    text-decoration: none;
+    -webkit-transition: all 0.4s ease-in-out;  
+    transition: all 0.4s ease-in-out;
+  }
+    
+  .button-container .btn-services {
+    position: absolute;
+    bottom: 2em;
+    left: 3em;  
+  }
+  
+  .button-container .btn-contact {
+    position: absolute;
+    bottom: 2em;
+    left: 15em;
+    
+  }
+  
+  .btn-contact:hover {
+    background: #ffffff;
+    border-color: transparent;
+    color: #63c6ae;
+  }
+    
+  .btn-contact:focus {
+    border-color: transparent;
+    outline: none;
+  }
+  
+  .btn-services:hover {
+    background: #ffffff;
+    border-color: transparent;
+    color: #63c6ae;
+  }
+    
+  .btn-services:focus {
+    border-color: transparent;
+    outline: none;
+  }
+    
+  
+  
+  
+  
+  
+   /* Services styles
+    ========================================== */
+  
+    .service-img {
+      height: 400px;
+    }
+  
+  
+  
+   /* Responsive Mobile styles
+    ========================================== */
+    
+    /* Esto significa, que si el ancho de la ventana es 800 O MENOS se aplica la propiedad especificada 
+    @media screen and (max-width: 800px){
+     body {
+       background-color: salmon;  
+     }
+    }
+    */
+    
+    /*  MOVILES  */
+    @media screen and (max-width: 768px){
+  
+      .after-nav-margin {
+        margin-top: 130px;
+      }
+  
+      .only-desktop {
+        display: none;
+      }
+  
+      .pie-desk{
+        display: none;
+      }
+      
+      .logo {
+        width: 150px;
+      }
+       
+        
+    }
+  
+    
+  
+    /* ESCRITORIO - Medium, Large  */
+    @media screen and (min-width: 769px){
+      /* Class for profesional and values section */
+      
+  
+      .after-nav-margin {
+        margin-top: 200px;
+      }
+  
+      .only-mobile{
+        display: none;
+      }
+  
+      .pie-mov{
+        display: none;
+      }
+  
+      .logo {
+        width: 250px;
+      }
+    }
+  
+  
+    /* ESCRITORIO - Large */
+    @media screen and (min-width: 993px){                
+  
+      .home-mov {
+        display: none;
+      }
+          
+    }
+  
+    /*  MOVILES - Medium */
+    @media screen and (max-width: 992px){
+  
+      .home-desk {
+        display: none;
+      }
+  
+      .navbar-nav a {      
+        font-size: 14px;          
+      }
+     
+      
+    }
+  
+    /*  ESCRITORIO - Extra large */
+    @media screen and (min-width: 1171px){
+  
+  
+      .navbar-nav a {      
+        font-size: 17px;          
+      }
+     
+      
+    }
+  
+  
+    /*   MOVILES - Medium - large  */
+    @media screen and (max-width: 1170px){
+  
+  
+      .navbar-nav a {      
+        font-size: 14px;          
+      }
+     
+      
+    }
+    
+    
+    /*
+    @media screen and (max-width: 992px){
+        Class for profesional and values section 
+      
+    }*/
+    
+    /*@media screen and (min-width: 992px){
+        Class for profesional and values section 
+      
+    }*/
+      
+  
+  
+  
+  
+  /* preloader styles
+    /* ========================================== */
+    .preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 99999;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center;
+      background: none repeat scroll 0 0 #fff;
+    }
+    
+    .sk-spinner-pulse {
+    width: 125px;
+    height: 110px;
+    background-color: #63c6ae; /* light green */
+    border-radius: 100%;
+    -webkit-animation: sk-pulseScaleOut 1s infinite ease-in-out;
+            animation: sk-pulseScaleOut 1s infinite ease-in-out; }
+    
+    @-webkit-keyframes sk-pulseScaleOut {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0); }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 0; } }
+    
+    @keyframes sk-pulseScaleOut {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0); }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 0; } }
