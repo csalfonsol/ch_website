@@ -133,6 +133,10 @@
       .only-desktop {
         display: none;
       }
+
+      .no-padding-mob {
+        padding: 0 !important;
+      }
   
       .pie-desk{
         display: none;
