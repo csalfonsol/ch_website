@@ -152,30 +152,28 @@
     .contact-container .btn-contact {
       position: absolute;
       bottom: 2em;
-      left: 15em;
-      
+      left: 15em;      
     }
     
-    .btn-contact:hover {
-      background: #ffffff;
-      border-color: transparent;
-      color: #63c6ae;
+    .contact-submit {  
+      background: transparent;
+      border-right: 2px solid #ffffff;
+      border-bottom: 2px solid #ffffff;
+      border-left: none;
+      border-top: none;
+      border-radius: 0px;
+      color: #ffffff;
+      font-weight: bold;
+      font-size: x-large;
+      letter-spacing: 1px;
+      padding: 6px;     
+      transition: all 0.4s ease-in-out;
     }
       
-    .btn-contact:focus {
-      border-color: transparent;
-      outline: none;
-    }
-    
-    .btn-services:hover {
-      background: #ffffff;
-      border-color: transparent;
-      color: #63c6ae;
-    }
       
-    .btn-services:focus {
-      border-color: transparent;
-      outline: none;
+    .contact-submit:hover {
+      background:rgba(255, 255, 255, 0.9);
+      color: #0e80b4;
     }
       
     .font-weight-normal {
