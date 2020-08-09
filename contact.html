@@ -147,63 +147,57 @@
 	</div>
 
 
+	<!-- Contact seccion
+	================================================== -->
 
-	
-
-
-<!-- Indicadores seccion DEPRECATED
-================================================== 
-<div class = "container-fluid">
-	<div class="row">			
-		<div class="col-md-8 col-sm-12 no-padding">			
-			<section id = "indicadores">			
-				<h2 class="indicadores-title wow bounceIn">INDICADORES</h2>				
-			</section>
-		</div>
-		<div class="col-md-4 col-sm-12 no-padding">								
-			<div class="indicadores-container wow flipInX">						
-				<div id="IndicadoresMax"><h2><a href="https://dolar.wilkinsonpc.com.co/">Dolar Hoy Colombia</a></h2></div><script type="text/javascript" src="https://dolar.wilkinsonpc.com.co/widgets/gratis/indicadores-economicos-max.js?ancho=410&alto=380&fondo=transparent&fsize=17&ffamily=sans-serif&fcolor=000000"></script>			
-			</div>								
-		</div>
-	</div>
-</div>
--->
-
-
-<!-- Contact seccion
-================================================== 
-<section id="contact">
-	<div class="container">
-		<div class="row">			
-			<div class="col-md-12 col-sm-12">			
-				<form id="contact_form" action="mail.php" method="post">								
-					<h2 class="wow bounceIn">CONTÁCTANOS</h2>
-					<h4 class="font-weight-normal wow fadeInUp" data-wow-delay="0.2s">Contamos con un equipo de contadores a tu servicio, por favor escríbenos tus preguntas e inquietudes.</h4>
-					<input id="name" placeholder="  Nombre" type="text" class="wow fadeIn" data-wow-delay="0.3s" name="name">	
-					<input id="email" placeholder="  E-mail" type="text" class="wow fadeIn" data-wow-delay="0.5s" name="email">					
-					<textarea id="message" placeholder="  Mensaje" class="wow fadeIn" data-wow-delay="0.7s" name="message" rows="5" cols="25"></textarea><br />
-					<input class="btn btn-default contact-submit smoothScroll wow fadeInUp" data-wow-delay="0.6s" type = "submit" value = "ENVIAR">		
-					
-					COMENTARIO Info Modal 
-
-
-					<div id="show_contact_msg" class = "modal_view">
-						<div class="modal-content">						  
-						  <p id = "modal-message">
-							  <span class="modal-submitting">Enviando . . . </span>
-						  </p>
-						  <a onclick = "hideModal()" class="modal-close btn btn-primary">Cerrar</a>	  
-						</div>  
+	<!-- Home section
+	================================================== -->
+	<section id="contact">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 p-0">										
+					<div class="contact-container">
+						<img src="images/contact_footer.jpg" class="img-fluid " alt="Identidad">	  	
+						<a href="services.html" class="wow fadeInUp btn-services" data-wow-delay="0.4s">SERVICIOS</a>
+						<a href="contact.html" class="wow fadeInUp btn-contact" data-wow-delay="0.9s">CONTÁCTANOS</a> 
 					</div>
-				</form>				
+				</div>
 			</div>
 		</div>
-	</div>
-</section>
--->
+	</section>
 
 
-<!-- Javascript
+	<section id="contact">
+		<div class="container">
+			<div class="row">			
+				<div class="col-md-12 col-sm-12">			
+					<form id="contact_form" action="mail.php" method="post">								
+						<h2 class="wow bounceIn">CONTÁCTANOS</h2>
+						<h4 class="font-weight-normal wow fadeInUp" data-wow-delay="0.2s">Contamos con un equipo de contadores a tu servicio, por favor escríbenos tus preguntas e inquietudes.</h4>
+						<input id="name" placeholder="  Nombre" type="text" class="wow fadeIn" data-wow-delay="0.3s" name="name">	
+						<input id="email" placeholder="  E-mail" type="text" class="wow fadeIn" data-wow-delay="0.5s" name="email">					
+						<textarea id="message" placeholder="  Mensaje" class="wow fadeIn" data-wow-delay="0.7s" name="message" rows="5" cols="25"></textarea><br />
+						<input class="btn btn-default contact-submit smoothScroll wow fadeInUp" data-wow-delay="0.6s" type = "submit" value = "ENVIAR">		
+						
+						COMENTARIO Info Modal 
+
+
+						<div id="show_contact_msg" class = "modal_view">
+							<div class="modal-content">						  
+							<p id = "modal-message">
+								<span class="modal-submitting">Enviando . . . </span>
+							</p>
+							<a onclick = "hideModal()" class="modal-close btn btn-primary">Cerrar</a>	  
+							</div>  
+						</div>
+					</form>				
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- Javascript
 	================================================== 
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
@@ -220,60 +214,60 @@
 	<script src="js/wow.min.js"></script>
 	<script src="js/custom.js"></script>
 
-<script>
-	/*
-	==============================================
-	Ajax Submiting For Email Contact Form.
-	===================================================================== 	
-	*/
+	<script>
+		/*
+		==============================================
+		Ajax Submiting For Email Contact Form.
+		===================================================================== 	
+		*/
 
-	$("#contact_form").submit(function(e) {
-		$('#show_contact_msg').css("opacity", "1");
-		$('#show_contact_msg').css("pointer-events", "auto");
+		$("#contact_form").submit(function(e) {
+			$('#show_contact_msg').css("opacity", "1");
+			$('#show_contact_msg').css("pointer-events", "auto");
 
-		var name = $('#name').val();
-		var email = $('#email').val();
-		var message = $('#message').val();
-		
-		var formURL = $(this).attr("action");
-		var data = {
-			name : name,
-			email : email,
-			message : message,
+			var name = $('#name').val();
+			var email = $('#email').val();
+			var message = $('#message').val();
+			
+			var formURL = $(this).attr("action");
+			var data = {
+				name : name,
+				email : email,
+				message : message,
+			}
+
+			$.ajax({
+				url : formURL,
+				type: "POST",
+				data : data,
+				
+				success: function (res) {				
+					if(res == '1'){				
+						$('#modal-message').html("<span class = modal-successful>¡Correo enviado!</span> <br> <div class = modal-text><span>Gracias, nos pondremos en contacto contigo lo más pronto posible.</span></div>");					
+					}
+
+					if(res == '5'){			
+						$('#modal-message').html("<span class = modal-err>¡Error!</span> <br> <div class = modal-text><span>Por favor, ingresa una dirección de correo electrónico válida. <br> Si el problema persiste, contacta con el administrador.</span></div>");					
+					}
+				}
+			});
+			e.preventDefault();
+		});
+
+
+	</script>
+
+
+	<script>
+
+		function hideModal() {
+			
+			$('#modal-message').html("<span class=modal-submitting>Enviando . . . </span>");
+			$('#show_contact_msg').css("opacity", "0");
+			$('#show_contact_msg').css("pointer-events", "none");
 		}
 
-		$.ajax({
-			url : formURL,
-			type: "POST",
-			data : data,
-			
-			success: function (res) {				
-				if(res == '1'){				
-					$('#modal-message').html("<span class = modal-successful>¡Correo enviado!</span> <br> <div class = modal-text><span>Gracias, nos pondremos en contacto contigo lo más pronto posible.</span></div>");					
-				}
-
-				if(res == '5'){			
-					$('#modal-message').html("<span class = modal-err>¡Error!</span> <br> <div class = modal-text><span>Por favor, ingresa una dirección de correo electrónico válida. <br> Si el problema persiste, contacta con el administrador.</span></div>");					
-				}
-			}
-		});
-		e.preventDefault();
-	});
-
-
-</script>
-
-
-<script>
-
-	function hideModal() {
-		
-		$('#modal-message').html("<span class=modal-submitting>Enviando . . . </span>");
-		$('#show_contact_msg').css("opacity", "0");
-		$('#show_contact_msg').css("pointer-events", "none");
-	}
-
-</script>
+	</script>
 
 
 </body>
