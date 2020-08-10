@@ -123,9 +123,10 @@
       border-style: solid;
       border-width: 1px;
       border-color: white;
+      color: seashell;
       background: transparent;
       padding: 10px;
-      margin-top: 20px;
+      
       width: 60%;
       font-size: large;
     }
@@ -143,17 +144,46 @@
     }
     
       
-    .contact-container .btn-services {
+    .contact-container .title {
       position: absolute;
-      bottom: 2em;
-      left: 3em;  
+      top: 2em;
+      left: 43%;
+      right: 43%;
+      color: seashell;
+    }
+
+    .contact-container .message {
+      position: absolute;
+      top: 6em;
+      left: 8%;
+      right: 8%;
+      color: seashell;
+    }
+  
+    .contact-container .contact-name {
+      position: absolute;
+      top: 11em;
+      left: 18%;
+      right: 18%;
+      
+    }
+
+    .contact-container .contact-email {
+      position: absolute;
+      top: 15em;
+      left: 18%;
+      right: 18%;    
+    }
+
+    .contact-container .contact-message {
+      position: absolute;
+      top: 18em;
+      left: 18%;
+      right: 18%;    
     }
     
-    .contact-container .btn-contact {
-      position: absolute;
-      bottom: 2em;
-      left: 15em;      
-    }
+    
+  
     
     .contact-submit {  
       background: transparent;
@@ -181,7 +211,11 @@
     }
     
     
-
+    /* Make changes on all placeholder's */
+    ::placeholder {
+      font-size: large;
+      color: white; 
+    }
 
   
   
