@@ -293,9 +293,7 @@
     /*  MOVILES - Medium */
     @media screen and (max-width: 992px){
   
-      .home-desk {
-        display: none;
-      }
+ 
   
       .navbar-nav a {      
         font-size: 14px;          
