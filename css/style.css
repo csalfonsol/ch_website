@@ -40,6 +40,12 @@
    /* Home styles
     ========================================== */
   
+  .stretch-width {
+    width: 100%;
+  }
+
+
+
   
   .button-container {
     display: inline-block;
@@ -239,10 +245,6 @@
   
       .only-desktop {
         display: none;
-      }
-
-      .no-padding-mob {
-        padding: 0 !important;
       }
   
       .pie-desk{
